@@ -7,6 +7,7 @@ header image and background image */
 
 :root {
     --header-image: url('https://example.david.qa/images/header.png');
+    --header-image-dark: url('https://example.david.qa/images/header-dark.png');
     --body-bg-image: url('https://example.david.qa/images/paper.jpg');
 
     /* colors */
@@ -19,7 +20,7 @@ header image and background image */
 
 @font-face {
     font-family: Inter;
-    src: url('Inter.ttf');
+    src: url('fonts/Inter.ttf');
 }
 
 /* I'm using a variable font, but in case I wasn't, here's an example of how 
@@ -27,7 +28,7 @@ I'd specify a bold version of the font if desired:
 
 @font-face {
     font-family: Inter;
-    src: url('Inter-Bold.ttf');
+    src: url('fonts/Inter-Bold.ttf');
     font-weight: bold;
 }
 
@@ -65,7 +66,7 @@ and change the media query according to the comment! */
 
 #header {
     width: 100%;
-    background-color: #4e648c;
+    background-color: #fff;
     /* header color here! */
     height: 150px;
     /* this is only for a background image! */
@@ -78,7 +79,7 @@ you can add them directly to the <div id="header"></div> element! */
 /* navigation section!! */
 #navbar {
     height: 40px;
-    background-color: #282828;
+    background-color: #18161d;
     /* navbar color */
     width: 100%;
 }
@@ -106,7 +107,7 @@ you can add them directly to the <div id="header"></div> element! */
 
 /* navigation link when a link is hovered over */
 #navbar li a:hover {
-    color: #9c9fba;
+    color: #aac4e3;
     text-decoration: underline;
 }
 
@@ -154,11 +155,10 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 }
 
 footer {
-    background-color: #282828;
+    background-color: #18161d;
     /* background color for footer */
     color: #fff;
     width: 100%;
-    border: 1px solid #000;
     height: 40px;
     padding: 10px;
     text-align: center;
@@ -183,7 +183,7 @@ h1 {
 /* the area below is for all links on your page
 EXCEPT for the navigation or footer */
 a {
-    color: #0000EE;
+    color: #006fee;
     font-weight: bold;
     /* if you want to remove the underline
 you can add a line below here that says:
@@ -201,7 +201,7 @@ strong {
 .box {
     background-color: #282828;
     color: #fff;
-    border: 1px solid #0000EE;
+    border: 1px solid #006fee;
     padding: 10px;
 }
 
@@ -216,6 +216,64 @@ strong {
     background-color: #ffffff;
 }
 
+
+/*  Light/Dark theme toggle
+  ------------------------------ */
+
+/* Toggle button and icon */
+
+.theme-switcher {
+/* Change this to position: absolute; if you want to keep it at the top */
+position: fixed;
+top: 10px;
+right: 10px;
+    }
+
+#theme-toggle {
+cursor: pointer;
+    }
+
+.dark-mode #theme-toggle {
+content: url('https://david.qa/images/dark.gif'); 
+    }
+    
+/* Dark theme */
+
+
+.dark-mode {
+background-color: #1e1f22;
+color: #fff;
+    }
+
+.dark-mode #header {
+background-color: #313338;
+background-image: var(--header-image-dark);
+}
+
+.dark-mode aside {
+    background-color: #2b2d31;
+    color: #fff;
+}
+
+.dark-mode main {
+    background-color: #313338;
+    color: #fff;
+}
+
+.dark-mode .box {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #fff;
+}
+
+.dark-mode strong {
+    color: #dadada;
+}
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 

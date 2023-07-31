@@ -20,14 +20,18 @@
 <meta property="og:description" content="This is an example website.">
 <meta property="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<!-- This will force the browser extension DarkReader to not force dark mode -->
+<meta name="darkreader-lock">
 </head>
-<!-- "Commenting out" markup or code will make it not work like this below: -->
-<!-- <meta name="darkreader-lock"> -->
-<!-- Enabling this will force the browser extension DarkReader to not force dark mode -->
 <body>
 <div id="container">
     <div id="headerArea">
-        <div id="header"></div>
+        <div id="header">
+        <!-- Dark/Light Theme Toggle Button -->
+        <div class="theme-switcher">
+            <img src="images/light.gif" alt="Theme toggle" id="theme-toggle"> 
+            </div>
+        </div>
         <nav id="navbar">
             <!-- Update your page links here, replacing "#" with the file name of your page -->
             <ul>
@@ -95,7 +99,13 @@
     </div>
     <footer id="footer">Return to <a href="https://david.qa">david.qa</a></footer>
 </div>
-<script src="js/script.js"></script>
+<script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+</script>
+<script src="js/theme-toggle.js"></script>
 </body>
 </html>
 
