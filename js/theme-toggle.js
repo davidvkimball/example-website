@@ -1,3 +1,4 @@
+// Dark/Light Mode Theme Toggle from david.qa 
 document.addEventListener('DOMContentLoaded', function() {
     // Get system preference
     const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Update image
-        const imgSrc = isDark ? 'https://david.qa/images/dark.gif' : 'https://david.qa/images/light.gif';
+        const imgSrc = isDark ? 'https://example.david.qa/images/dark.gif' : 'https://example.david.qa/images/light.gif';
         console.log(`Image source: ${imgSrc}`);
         toggle.src = imgSrc;
     }

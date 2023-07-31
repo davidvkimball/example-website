@@ -234,7 +234,7 @@ cursor: pointer;
     }
 
 .dark-mode #theme-toggle {
-content: url('https://david.qa/images/dark.gif'); 
+content: url('https://example.david.qa/images/dark.gif'); 
     }
     
 /* Dark theme */
