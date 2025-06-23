@@ -6,9 +6,9 @@
 header image and background image */
 
 :root {
-    --header-image: url('https://example.david.qa/images/header.png');
-    --header-image-dark: url('https://example.david.qa/images/header-dark.png');
-    --body-bg-image: url('https://example.david.qa/images/paper.jpg');
+    --header-image: url('https://example.dvdv.kim/images/header.png');
+    --header-image-dark: url('https://example.dvdv.kim/images/header-dark.png');
+    --body-bg-image: url('https://example.dvdv.kim/images/paper.jpg');
 
     /* colors */
     --content: #25256e;
@@ -234,7 +234,7 @@ cursor: pointer;
     }
 
 .dark-mode #theme-toggle {
-content: url('https://example.david.qa/images/dark.gif'); 
+content: url('https://example.dvdv.kim/images/dark.gif'); 
     }
     
 /* Dark theme */

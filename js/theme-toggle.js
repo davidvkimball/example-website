@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Update image
-        const imgSrc = isDark ? 'https://example.david.qa/images/dark.gif' : 'https://example.david.qa/images/light.gif';
+        const imgSrc = isDark ? 'https://example.dvdv.kim/images/dark.gif' : 'https://example.dvdv.kim/images/light.gif';
         console.log(`Image source: ${imgSrc}`);
         toggle.src = imgSrc;
     }
